@@ -77,7 +77,7 @@ const Homepage = () => {
         {products.map((product) => (
           <Col key={product.id} md={4}>
             <Card className="mb-3 shadow-sm">
-              <Card.Img variant="top" src={`http://localhost:5000${product.imageUrl}`} />
+              <Card.Img variant="top" src={`https://ai-x553.onrender.com${product.imageUrl}`} />
               <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>{product.description}</Card.Text>

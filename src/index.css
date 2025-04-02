@@ -1,0 +1,426 @@
+/* Global Styles for login page */
+:root {
+    --primary-color: #1B4D3E;  /* Dark Forest Green */
+    --secondary-color: #4B5320; /* Deep Olive */
+    --accent-color: #D4AF37; /* Gold */
+    --background-color: #F9F5E3; /* Warm Beige */
+    --form-background: #FAF3E0; /* Light Beige for the form card */
+    --text-color: #2F4F4F; /* Dark Charcoal */
+    --input-border-color: #D1B29A; /* Light Olive for input borders */
+    --font-family-primary: 'Playfair Display', serif;
+    --font-family-secondary: 'Roboto', sans-serif;
+}
+
+/* Login page specific styles */
+.login-page {
+    font-family: var(--font-family-secondary);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background-image: url("https://wallpapers.com/images/featured/4k-nature-ztbad1qj8vdjqe0p.webp"); /* Replace with the URL of your 4K image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+  }
+  
+  /* Fade-in effect for smooth transition */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* The rest of your CSS for form-card and other elements remains the same */
+  
+  .login-page .form-card {
+    background-color: rgba(250, 243, 224, 0.9); /* Light Beige with transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Fade-in effect for smooth transition */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .login-page .form-title {
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .login-page .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .login-page .form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .login-page .form-control {
+    background-color: white;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 12px;
+    margin-top: 6px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-page .form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  .login-page button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-page button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+  }
+  
+  .login-page button:disabled {
+    background-color: var(--secondary-color);
+    cursor: not-allowed;
+  }
+  
+  .login-page .text-danger {
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  
+  .login-page p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .login-page button.variant-link {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .login-page button.variant-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+  /* Register page specific styles */
+.register-page {
+    font-family: var(--font-family-secondary);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background-image: url("https://wallpapers.com/images/featured/4k-nature-ztbad1qj8vdjqe0p.webp"); /* Use the high-res 4K image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+  }
+  
+  /* Fade-in effect for smooth transition */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Form card specific to Register */
+  .register-page .form-card {
+    background-color: rgba(250, 243, 224, 0.9); /* Light Beige with transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .register-page .form-title {
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .register-page .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .register-page .form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .register-page .form-control {
+    background-color: white;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 12px;
+    margin-top: 6px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+  
+  .register-page .form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  .register-page button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .register-page button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+  }
+  
+  .register-page button:disabled {
+    background-color: var(--secondary-color);
+    cursor: not-allowed;
+  }
+  
+  .register-page .text-danger {
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  
+  .register-page p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .register-page button.variant-link {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .register-page button.variant-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+  /* Homepage Container */
+.homepage-container {
+    background-color: #f0f0f0;  /* Light gray background */
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  /* Header */
+  .homepage-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4e4a34;  /* Deep olive green */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Cart Button */
+  .homepage-container .btn-secondary {
+    background-color: #6b8e23;  /* Olive Green */
+    border-color: #6b8e23;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+  }
+  
+  .homepage-container .btn-secondary:hover {
+    background-color: #4e704e;  /* Darker Olive Green */
+    border-color: #4e704e;
+  }
+  
+  /* Spinner */
+  .d-flex.justify-content-center.my-4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  /* Product Cards */
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Product Image */
+  .card img {
+    border-radius: 12px 12px 0 0;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #4e4a34;  /* Deep Olive Green */
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card-text.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d1a15c; /* Golden brown for price */
+  }
+  
+  /* Add to Cart Button */
+  .card .btn-success {
+    background-color: #6b8e23;  /* Olive Green */
+    border-color: #6b8e23;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card .btn-success:hover {
+    background-color: #4e704e;  /* Darker Olive Green */
+    border-color: #4e704e;
+  }
+  
+  /* Cart Modal */
+  .modal-content {
+    background-color: #f9f5e3;
+    border-radius: 12px;
+    border: none;
+    padding: 20px;
+  }
+  
+  .modal-header {
+    border-bottom: 1px solid #d1b29a;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4e4a34;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    background-color: #faf3e0;
+    border-top: 1px solid #d1b29a;
+  }
+  
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #4e4a34;
+  }
+  
+  ul li button {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  
+  /* Total Price and Cart Layout */
+  .modal-footer p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4e704e;  /* Dark Olive Green */
+  }
+  
+  button {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
